@@ -1,0 +1,118 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    width: 80%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    margin: auto;
+}
+.help
+{
+    width: 100%;
+    min-height: 40px;
+    background-color: #436850;
+    display: flex;
+    flex-direction: row;
+}
+.help .contact{
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 75%;
+
+}
+.contact h4
+{
+    color: white;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.help .icons{
+
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-basis: 20%;
+    padding-top: 10px;
+}
+.icons .b1
+{
+    padding-left: 15px;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.icons .b1:hover{
+   
+    color: white;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.logo-menu-div
+{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #000;
+    margin-top: 10px;
+    background-color: #436850;
+}
+.logo-menu-div .logo label
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.menu ul li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+.menu ul li a{
+
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+.menu ul li:hover{
+
+    background-color: #ADBC9F;
+    color: black;
+
+}
+.menu ul li a:hover{
+    color: black;
+}
