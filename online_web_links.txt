@@ -1,0 +1,9 @@
+Todays will develop one website using html and css
+-----------------------------------
+online hosting options
+-------------
+1. git : only static pages/ localstorage
+2. online server buy
+
+
+https://colorhunt.co/palette/12372a436850adbc9ffbfada

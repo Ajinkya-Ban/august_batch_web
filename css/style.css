@@ -9,13 +9,13 @@ body
     display: flex;
     flex-direction: column;
 }
-.container
+.container1
 {
     width: 80%;
     min-height: 100px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: auto;
 }
 .help
@@ -94,10 +94,12 @@ body
     display: flex;
     flex-direction: row;
     padding: 10px;
+    
 }
 .menu ul li{
     list-style-type: none;
     padding: 10px;
+   
     
 }
 .menu ul li a{
@@ -116,3 +118,74 @@ body
 .menu ul li a:hover{
     color: black;
 }
+
+
+.slider
+{
+    width: 100%;
+    min-height: 200px;
+    /* border: 1px solid #000; */
+    margin-top: 10px;
+}
+.box
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.box .b1
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    /* border: 1px solid #000; */
+}
+.b1 .text-heading{
+    width: 100%;
+    min-height: 40px;
+    /* background-color: #436850; */
+}
+.text-heading h3{
+   
+    background-color: #436850;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.img-div img{
+    width: 100%;
+   height: 300px;
+}
+@media only screen and (max-width:768px)
+{
+    .logo-menu-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul{
+        display: block;
+        
+    }
+    .menu ul li{
+        text-align: center;
+    }
+    .logo-menu-div .logo label{
+
+        margin-left: 20vw;
+        min-width: 150px;
+        font-size: 1.6em
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+ 
