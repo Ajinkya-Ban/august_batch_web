@@ -8,6 +8,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    background-color:azure;
    
 }
 .container1
@@ -71,7 +72,7 @@ body
 .logo-menu-div
 {
     width: 100%;
-    max-height: 70px;
+    min-height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -254,20 +255,222 @@ ul{
     /* text-align: center; */
 }
 
-
-@media only screen and (max-width:768px)
+/* headphone code started */
+.prod-div
 {
-    .logo-menu-div{
-        display: flex;
-        flex-direction: column;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    display: flex;  
+}
+.prod-div .prod-img{
+   flex-basis: 30%;
+   margin-left: 20px;
+   height: 330px;
+}
+.prod-div .prod-img img
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 15px 0 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.prod-div .prod-img img:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.prod-div .prod-heading{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 66%;
+}
+
+.prod-div .prod-heading h2{
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.prod-div .prod-heading .sub-item h4{
+   font-weight: bold;
+   font-size: 1em;
+   position: relative;
+}
+.prod-div .prod-heading .sub-item p
+{
+    padding: 10px;
+    margin-top: 10px;
+}
+.prod-div .prod-heading .sub-item h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E91E63;
+    height: 5px;
+    box-sizing: border-box;
+    width: 200px;
+
+}
+.prod-div .prod-heading .other-info{
+    width: 100%;
+    border: 1px solid #000;
+    
+}
+.prod-div .prod-heading .other-info h4{
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
+   font-size: 1em;
+
+}
+.prod-div .prod-heading .other-info h4::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    background-color: #E91E63;
+    height: 5px;
+    box-sizing: border-box;
+    width: 200px;
+
+}
+.accr
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.prod-div1
+{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.prod-div1 .img-div
+{
+    min-width: 300px;
+    height: 300px;
+    
+}
+.prod-div1 .img-div img{
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+.prod-div1 .img-div img:hover{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+.prod-head{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.prod-head h2{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.prod-head .about-prod{
+
+    width: 100%;
+    display: flex;
+}
+.prod-head .about-prod h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+}
+.prod-head .about-prod h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E91E63;
+    height: 4px;
+    box-sizing: border-box;
+    width: 200px;
+
+}
+.about-desc img
+{
+    width: 28px;
+    height: 28px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.other-info1
+{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #000;
+}
+ 
+.other-info1 h4
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+}
+.other-info1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E91E63;
+    height: 4px;
+    box-sizing: border-box;
+    width: 200px;
+
+}
+
+@media  screen and (max-width:768px)
+{
+    .container1{
+        width: 100%;
     }
+    .logo-menu-div{
+     
+       flex-direction: column;
+       z-index: 10000;
+       height: auto;
+      
+    }
+    
     .menu ul{
         display: block;
-        
+
     }
     .menu ul li{
         text-align: center;
+        
+        
     }
+   
     .logo-menu-div .logo label{
 
         margin-left: 20vw;
@@ -289,5 +492,12 @@ ul{
     .footer-col{
         width: 100%;
     }
+   .prod-div{
+    flex-direction: column;
+   }
+   .prod-div1
+   {
+    flex-direction: column;
+   }
 }
  
